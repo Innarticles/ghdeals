@@ -10,7 +10,7 @@
 
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="mdi-navigation-more-vert right"></i></span>
+          <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
 
 
           <%= promo.product %>
@@ -25,9 +25,11 @@
 
         </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4"><%= promo.product %> <i class="mdi-navigation-close right"></i></span>
+          <span class="card-title grey-text text-darken-4"><%= promo.product %> <i class="fa fa-times repairI"></span>
           <p>Here is some more information about this product that is <%= promo.description %></p>
-
+      
+          <%= promo.contact %>
+          <br>
 
           <%= link_to 'Delete',
           promo_path(promo),
