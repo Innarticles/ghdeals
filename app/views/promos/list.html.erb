@@ -1,80 +1,48 @@
-<!-- <h1>Listing promos Am here</h1>
+<div class="container">
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Product</th>
-      <th>Shop</th>
-      <th>Location</th>
-      <th>Picture</th>
-      <th>Discount</th>
-      <th>Normal price</th>
-      <th>Category</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div class="row">
     <% @promos.each do |promo| %>
-      <tr>
-        <td><%= promo.description %></td>
-        <td><%= promo.product %></td>
-        <td><%= promo.shop %></td>
-        <td><%= promo.location %></td>
-        <td><%= promo.picture %></td>
-        <td><%= promo.discount %></td>
-        <td><%= promo.normal_price %></td>
-        <td><%= promo.category %></td>
-        <td><%= link_to 'Show', promo %></td>
-        <td><%= link_to 'Edit', edit_promo_path(promo) %></td>
-        <td><%= link_to 'Destroy', promo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="col s4">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
 
-<br> -->
+          <%= image_tag(promo.picture, class: "activator")%>
 
-<div class="row">
-        <% @promos.each do |promo| %>
-        <div class="col s4">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-
-                <%= image_tag(promo.picture, class: "activator")%>
-
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="mdi-navigation-more-vert right"></i></span>
-               
-
-                <%= promo.product %>
-                <%= promo.shop %>
-                <%= promo.location %>
-              
-                <%= promo.discount %>
-                <%= promo.normal_price %>
-       
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><%= promo.product %> <i class="mdi-navigation-close right"></i></span>
-                <p>Here is some more information about this product that is <%= promo.description %></p>
-
-            
-                <%= link_to 'Delete',
-                promo_path(promo),
-                :method => :delete,
-                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                :class => 'btn btn-xs btn-danger' %>
-
-              </div>
-            </div>
-          </div>
-          <% end %>
-
-          <br>
         </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="mdi-navigation-more-vert right"></i></span>
 
 
-<%= link_to 'New Promo', new_promo_path %>
+          <%= promo.product %>
+          <br>
+          <%= promo.shop %>
+          <br>
+          <%= promo.location %>
+          <br>
+          <%= promo.discount %>
+          <br>
+          <%= promo.normal_price %>
+
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><%= promo.product %> <i class="mdi-navigation-close right"></i></span>
+          <p>Here is some more information about this product that is <%= promo.description %></p>
+
+
+          <%= link_to 'Delete',
+          promo_path(promo),
+          :method => :delete,
+          :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+          :class => 'btn btn-xs btn-danger' %>
+
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+    <br>
+  </div>
+
+
+  <%= link_to 'New Promo', new_promo_path %>
+</div>

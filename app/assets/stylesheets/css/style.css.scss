@@ -1,0 +1,68 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@font-face {
+
+font-family: 'Lato';
+src:font-url('Lato-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+
+font-family: 'Oswald';
+src:font-url('Oswald-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+
+font-family: 'Open Sans';
+src:font-url('OpenSans.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+
+font-family: 'Roboto Slab';
+src:font-url('RobotoSlab-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {font-family: 'Indie Flower', cursive;
+
+font-family: 'Indie Flower';
+src:font-url('IndieFlower.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+body{
+	font-family: 'Roboto Slab';
+}
+
+h1, h2 , h3, h4, p {
+	font-family: 'Roboto Slab';
+}
+
+.login{
+	padding: 40px;
+}
+.carousel {
+position: relative;
+margin-top: -15px;
+}
+
+.repairI{
+float: right;
+line-height: 2;
+}
