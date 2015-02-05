@@ -1,5 +1,17 @@
 <h1>Listing promos Am here</h1>
 
+
+
+<%= form_tag promos_list_path, method: :get do %>
+  <div class="field">
+    <%= label_tag :search, "Search" %><br>
+    <%= text_field_tag :product, params[:product] %>
+    <%= text_field_tag :location, params[:location] %>
+  </div>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+
 <table>
   <thead>
     <tr>
