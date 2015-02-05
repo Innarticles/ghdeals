@@ -15,12 +15,16 @@
 
   <div class="row">
     <% @promos.each do |promo| %>
+
     <div class="col s4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
 
+          <% if (promo.image == "") %>
           <%= image_tag("box.jpg", class: "activator")%>
-
+          <% else %>
+          <%= image_tag promo.image(:thumb) %>
+          <% end %>
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
@@ -59,7 +63,6 @@
 
   <br>
 </div>
-
 
 <%= link_to 'New Promo', new_promo_path %>
 </div>
