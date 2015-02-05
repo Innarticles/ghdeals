@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150205170825) do
+ActiveRecord::Schema.define(version: 20150205185953) do
 
   create_table "promos", force: true do |t|
     t.text     "description"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20150205170825) do
     t.string   "shop"
     t.string   "location"
     t.string   "picture"
-    t.decimal  "discount"
+    t.string   "discount"
     t.integer  "normal_price"
     t.string   "category"
     t.datetime "created_at"
