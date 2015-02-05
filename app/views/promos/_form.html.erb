@@ -1,14 +1,15 @@
-<%= form_for(@promo) do |f| %>
+<div class="container">
+  <%= form_for(@promo) do |f| %>
   <% if @promo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@promo.errors.count, "error") %> prohibited this promo from being saved:</h2>
+  <div id="error_explanation">
+    <h2><%= pluralize(@promo.errors.count, "error") %> prohibited this promo from being saved:</h2>
 
-      <ul>
+    <ul>
       <% @promo.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <li><%= message %></li>
       <% end %>
-      </ul>
-    </div>
+    </ul>
+  </div>
   <% end %>
 
   <div class="field">
@@ -47,7 +48,19 @@
     <%= f.label :category %><br>
     <%= f.text_field :category %>
   </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.select :category, options_for_select(Promo::CATEGORIES, Promo::CATEGORIES ) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+  <% end %>
+
+  <select name="carlist" form="carform">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+</div>

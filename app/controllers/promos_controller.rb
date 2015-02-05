@@ -19,6 +19,7 @@ class PromosController < ApplicationController
   # GET /promos/new
   def new
     @promo = Promo.new
+    @example = [["A", 1, {:class=>"bold"}], ["B", 2], ["C", 3]] 
   end
 
   # GET /promos/1/edit
