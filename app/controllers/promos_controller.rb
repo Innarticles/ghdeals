@@ -7,6 +7,10 @@ class PromosController < ApplicationController
     @promos = Promo.all
   end
 
+  def list
+    @promos = Promo.all
+  end
+
   # GET /promos/1
   # GET /promos/1.json
   def show
