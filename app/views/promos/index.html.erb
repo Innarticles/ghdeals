@@ -4,32 +4,29 @@
         <h1>Welcome to HotDeal</h1>
         <!-- Implementation of search Bar -->
 
-
-        <div class="container">
-
-          <div class="well well-sm" style="">
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-
-              <div class="input-group-searchbar-left">
-
-                <input type="text" class="form-control" placeholder="Search for...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-
-
-            <div class="col-lg-6">
-              <div class="input-group-searchbar-right">
-                <input type="text" class="form-control" placeholder="Search for...">
+ <div class="container">
+      <div class="well" style="">
+        <div class="row">
+          <div id="searchForm" class="col-md-12">
+            <%= form_tag promos_list_path, method: :get do %>
+              <div class="col-md-5">
+                <div class="form-group" id="product_search">
+                  <%= text_field_tag :product, params[:product], class: "form-control", placeholder: "Search a product" %>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <%= text_field_tag :location, params[:location], class: "form-control", placeholder: "Enter a location" %>
+              </div>
+              <div class="col-md-2">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
+                <%= submit_tag 'GO!', class: "btn btn-default" %>
                 </span>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+              </div>
+            <% end %>
           </div>
-
         </div>
+      </div>
+</div>
 
 <!-- <div>
   <form id="custom-search-form" class="form-search form-horizontal pull-right">
