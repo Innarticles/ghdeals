@@ -15,3 +15,11 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+/*$(document).ready(function(){
+  var location = $('#loc-value').text();
+  console.log(location);
+});*/
+
+/*var location = document.getElementById('loc-value').value;
+console.log(location);*/
