@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Ghdeals</title>
+  <title>EasyDiscount</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
    <%= stylesheet_link_tag 'mystyle' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -26,7 +26,7 @@
                 <li>
                   <a href="#contact" class="gn-icon gn-icon-archive">Contact</a>
                 </li>
-                <li>    
+                <li>
                       <% if user_signed_in? %>
                           <%= link_to logout_path, method: :delete do %>
                           <span class="sign-out-ico"> Logout</span>
@@ -48,7 +48,7 @@
             </div><!-- /gn-scroller -->
           </nav>
         </li>
-        <li><%= link_to 'EASYDISCOUNT%', root_path %></li>
+        <li><%= link_to 'EASYDISCOUNT', root_path %></li>
         <li><ul class="company-social">
                             <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -69,7 +69,7 @@
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
 
-					<p>Copyright &copy; 2014 Ninestars - by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+					<p>Copyright &copy; 2014  <%= link_to 'EasyDiscount', root_path %></p>
 				</div>
 			</div>
 		</div>

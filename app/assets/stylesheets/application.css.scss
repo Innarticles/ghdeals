@@ -19,7 +19,7 @@
 @import "bootstrap";
 
 #submit-btn, #loc-search, #prod-search {
-    width: 100%;
+    width: 98%;
     height: 40px;
 
 }
@@ -50,7 +50,7 @@
 }
 strong{
   font-font-weight: bold;
-  color: #eb5d1e;
+  color: white;
 }
 
 .sign-in-ico:before {
@@ -67,6 +67,7 @@ strong{
   margin-left: 19.5px;
 }
 
+
 .dashboard-ico:before {
   content: "\F0E4";
   font-family: fontawesome;
@@ -78,3 +79,8 @@ strong{
   margin-bottom: 30px;
   margin-top: 20px
 }
+
+.pics{
+  border-radius: 60px;
+}
+

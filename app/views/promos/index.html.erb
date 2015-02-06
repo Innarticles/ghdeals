@@ -1,7 +1,12 @@
     <!-- Section: intro -->
     <section id="intro" class="intro">
       <div class="slogan">
-        <h1><strong>Welcome to Easy Discount %</strong></h1>
+        <div class="header-bg">
+        </div>
+        <h1><strong>Easy Discounts</strong></h1>
+        <div class="slogan-bg">
+        </div>
+        <p><h3><strong>Search for Promotions around you.</strong></h3></p>
         <!-- Implementation of search Bar -->
 
  <div class="container">
@@ -24,8 +29,9 @@
                 <%= text_field_tag :location, params[:location], class: "form-control", placeholder: "Enter a location", id: 'loc-search' %>
               </div>
             </div>
+
               <div class="col-md-2 search">
-                <span class="input-group-btn">
+                <span class="">
                 <%= submit_tag 'GO!', class: "btn btn-default", id: 'submit-btn' %>
                 </span>
               </div>
@@ -47,7 +53,7 @@
 </div> -->
 
 <div align="center">
-<p><strong>Search for Promotions around you.</strong></p>
+
 <a href="#about" class="btn btn-skin scroll">Learn more</a>
 </div>
 
@@ -108,3 +114,89 @@
 
 <%#= link_to 'New Promo', new_promo_path %>
 </div>
+
+
+
+
+<!-- Section: about -->
+    <section id="about" class="home-section text-center bg-gray">
+    <div class="heading-about marginbot-50">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+          <div class="section-heading">
+          <h2>About us</h2>
+          <p>Stop the hustle of going from shop to shop doing window shopping, asking for prices to items that you need. Do this with EasyDiscount. We bring you the best pricing deals out there!!.</p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-4 col-sm-2 col-md-2">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+            <h5>Laud Bruce</h5>
+                        <p class="subtitle">Backend (RoR)</p>
+                        <div class="avatar"><%= image_tag("Laud.jpeg", :alt => "Kwame", class: "pics" )%></div>
+                    </div>
+                </div>
+
+            </div>
+      <div class="col-xs-8 col-sm-2 col-md-2">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+            <h5>Innocent Udeogu</h5>
+                        <p class="subtitle">Backend (RoR)</p>
+                        <div class="avatar"><%= image_tag("Innocent.JPG", :alt => "Kwame", class: "pics" )%></div>
+                    </div>
+
+        </div>
+            </div>
+      <div class="col-xs-8 col-sm-2 col-md-2">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+            <h5>John Bordebo</h5>
+                        <p class="subtitle">Research</p>
+                        <div class="avatar"><%= image_tag("John.jpg", :alt => "Kwame", class: "pics" )%></div>
+                    </div>
+                </div>
+
+            </div>
+      <div class="col-xs-8 col-sm-2 col-md-2">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+            <h5>Kennedy Anyinatoe</h5>
+                        <p class="subtitle">UI / UX</p>
+                        <div class="avatar"><%= image_tag("Kennedy.jpg", :alt => "Kwame", class: "pics" )%></div>
+                    </div>
+                </div>
+
+            </div>
+      
+
+       <div class="col-xs-8 col-sm-2 col-md-2">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+            <h5>Asiedu Amoako Kwame</h5>
+                        <p class="subtitle">UI / UX</p>
+                        <div class="avatar"><%= image_tag("Kwame.jpg", :alt => "Kwame", class: "pics" )%></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+  </section>
+  <!-- /Section: about -->
