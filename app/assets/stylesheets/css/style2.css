@@ -1,76 +1,5 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-@font-face {
-
-font-family: 'Lato';
-src:font-url('Lato-Regular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-
-font-family: 'Oswald';
-src:font-url('Oswald-Light.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-
-font-family: 'Open Sans';
-src:font-url('OpenSans.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-
-font-family: 'Roboto Slab';
-src:font-url('RobotoSlab-Light.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {font-family: 'Indie Flower', cursive;
-
-font-family: 'Indie Flower';
-src:font-url('IndieFlower.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
-
-.icon-block {
-  padding: 0 15px;
-}
-body{
-	font-family: 'Roboto Slab';
-}
-
-h1, h2 , h3, h4, p {
-	font-family: 'Roboto Slab';
-}
-
-.login{
-	padding: 40px;
-}
-.carousel {
-position: relative;
-margin-top: -15px;
-}
-
-.repairI{
-float: right;
-line-height: 2;
-}
-
-
-
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+/*@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');*/
 
 
 body {
@@ -500,7 +429,7 @@ input.gn-search:focus {
 		height: 60px
 }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 422px) { 
 	.gn-menu-wrapper.gn-open-all {
 			-webkit-transform: translateX(0px);
 			-moz-transform: translateX(0px);
@@ -525,7 +454,7 @@ input.gn-search:focus {
 	position:relative;
 }
 
-#intro{
+#intro{	
 	background-image: url(/assets/img-bg.jpg);
 	background-size: cover;
 }
@@ -533,7 +462,7 @@ input.gn-search:focus {
 .intro .slogan {
 	padding:250px 0 60px;
 	text-align: center;
-
+	
 }
 .intro .slogan h1 {
 	color: #fff;
@@ -604,7 +533,7 @@ input.gn-search:focus {
 .team-social {
 	margin-left: 0;
 	padding-left: 0;
-
+	
 }
 
 .team-social {
@@ -656,7 +585,7 @@ input.gn-search:focus {
 
 .service-icon {
 	margin-bottom: 20px;
-}
+}	
 
 
 
@@ -760,7 +689,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 footer {
 	text-align: center;
 	padding: 50px 0 ;
-
+	
 }
 
 footer p {
@@ -848,7 +777,7 @@ footer a:hover {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -865,7 +794,7 @@ footer a:hover {
     }
 }
 
-@-moz-keyframes pulse {
+@-moz-keyframes pulse {    
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -933,7 +862,7 @@ footer a:hover {
     .brand-heading {
         font-size: 100px;
     }
-
+	
     .intro-text {
         font-size: 25px;
     }
@@ -941,238 +870,26 @@ footer a:hover {
 
 }
 @media (max-width:768px) {
-
+	
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
-
+	
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
 	.intro .slogan {
 		padding:100px 0 60px;
-
+		
 	}
-
+	
 }
 
 @media (max-width:480px) {
 
 	.intro .slogan {
 		padding:170px 0 60px;
-
+		
 	}
-
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card-panel {
-  padding: 20px;
-  margin: 0.5rem 0 1rem 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  background-clip: padding-box;
-  background-color: #fff; }
-
-.card {
-  position: relative;
-  overflow: hidden;
-  margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  background-clip: padding-box; }
-  .card .card-title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300; }
-    .card .card-title.activator {
-      cursor: pointer; }
-  .card a {
-    color: #ffab40;
-    margin-right: 20px;
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    text-transform: uppercase; }
-    .card a:hover {
-      color: #ffd8a6; }
-  .card.small {
-    height: 300px;
-    position: relative; }
-    .card.small .card-image {
-      overflow: hidden;
-      height: 150px; }
-    .card.small .card-content {
-      overflow: hidden;
-      height: 150px; }
-    .card.small .card-action {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-  .card .card-image {
-    position: relative;
-    overflow: hidden; }
-    .card .card-image img {
-      -webkit-border-radius: 2px 2px 0 0;
-      -moz-border-radius: 2px 2px 0 0;
-      border-radius: 2px 2px 0 0;
-      background-clip: padding-box;
-      position: relative;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 100%; }
-    .card .card-image .card-title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 20px; }
-  .card .card-content {
-    padding: 20px;
-    -webkit-border-radius: 0 0 2px 2px;
-    -moz-border-radius: 0 0 2px 2px;
-    border-radius: 0 0 2px 2px;
-    background-clip: padding-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .card .card-content p {
-      margin: 0;
-      color: inherit; }
-    .card .card-content .card-title {
-      line-height: 48px; }
-  .card .card-action {
-    border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 20px; }
-  .card .card-reveal {
-    padding: 20px;
-    position: absolute;
-    background-color: #FFF;
-    top: 100%;
-    height: 100%;
-    z-index: 1;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .card .card-reveal .card-title {
-      cursor: pointer;
-      display: block; }
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  z-index: 1;
-  will-change: opacity, transform;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
-  .waves-effect .waves-ripple {
-    position: absolute;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.7s ease-out;
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -ms-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -o-transition-property: -o-transform, opacity;
-    transition-property: transform, opacity;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    pointer-events: none; }
-  .waves-effect.waves-light .waves-ripple {
-    background-color: rgba(255, 255, 255, 0.45); }
-  .waves-effect.waves-red .waves-ripple {
-    background-color: rgba(244, 67, 54, 0.7); }
-  .waves-effect.waves-yellow .waves-ripple {
-    background-color: rgba(255, 235, 59, 0.7); }
-  .waves-effect.waves-orange .waves-ripple {
-    background-color: rgba(255, 152, 0, 0.7); }
-  .waves-effect.waves-purple .waves-ripple {
-    background-color: rgba(156, 39, 176, 0.7); }
-  .waves-effect.waves-green .waves-ripple {
-    background-color: rgba(76, 175, 80, 0.7); }
-  .waves-effect.waves-teal .waves-ripple {
-    background-color: rgba(0, 150, 136, 0.7); }
-
-.waves-notransition {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important; }
-
-.waves-circle {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
-
-.waves-input-wrapper {
-  border-radius: 0.2em;
-  vertical-align: bottom; }
-  .waves-input-wrapper .waves-button-input {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1; }
-
-.waves-circle {
-  text-align: center;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  border-radius: 50%; }
-
-.waves-block {
-  display: block; }
-
-/* Firefox Bug: link not triggered */
-a.waves-effect .waves-ripple {
-  z-index: -1; }
-
-
-  .grey-text.text-darken-4 {
-  color: #212121 !important; }
-

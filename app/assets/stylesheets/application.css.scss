@@ -17,3 +17,16 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#submit-btn, #loc-search, #prod-search {
+    width: 100%;
+    height: 40px;
+
+}
+
+.myWell {
+    background-color: #eb5d1e;
+}
+.search {
+    margin: -15px;
+}

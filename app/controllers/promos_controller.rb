@@ -1,6 +1,6 @@
 class PromosController < ApplicationController
   before_action :set_promo, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, :except => [:show, :index]
+  before_action :authenticate_user!, :except => [:show, :index, :list]
 
 
   # GET /promos
