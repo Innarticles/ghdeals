@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ghdeals</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -40,7 +41,10 @@
       </ul>
   </div>
 
-<%= yield %>
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+
+
 
 
 <footer>

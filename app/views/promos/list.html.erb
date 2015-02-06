@@ -30,6 +30,11 @@
         <p><%= promo.description %></p>
         <h5>Contact</h5>
         <%= promo.contact %>
+        <!-- <div id="loc-value">
+          <%#= promo.location %>
+        </div> -->
+
+        <%#= link_to (image_tag('marker.png', size: '40x40')), '#mapmodals', 'data-toggle' => 'modal' %>
         <br>
         <br>
         <div align="center">
@@ -46,6 +51,25 @@
 
   <br>
 </div>
+
+<!-- <div class="modal fade" id="mapmodals">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Peggy Guggenheim Collection - Venice</h4>
+        </div>
+        <div class="modal-body">
+          <div id="map-container"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
 
 
 <%= link_to 'New Promo', new_promo_path %>
