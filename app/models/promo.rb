@@ -1,6 +1,6 @@
 class Promo < ActiveRecord::Base
 
-	CATEGORIES = ['hot', 'medium', 'cold']
+	CATEGORIES = ['Electronics', 'Clothing', 'Food', 'Fitness','Hospitality']
 
 	has_attached_file :image,
                     # :path =>  ":rails_root/public/system/:class/:attachment/:id_partition/:style/:filename",
