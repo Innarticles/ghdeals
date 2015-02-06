@@ -24,6 +24,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <%= f.hidden_field :role, :value => 'admin' %>
   <div class="actions text-center">
     <%= f.submit "Sign up", class: 'btn btn-primary' %>
     <%= render "devise/shared/links" %>

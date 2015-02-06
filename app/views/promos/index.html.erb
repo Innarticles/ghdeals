@@ -85,11 +85,13 @@
         <br>
         <br>
         <div align="center">
-          <%= link_to 'Delete',
-          promo_path(promo),
-          :method => :delete,
-          :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-          :class => 'btn btn-xs btn-danger' %>
+          <% if can? :update, promo %>
+              <%= link_to 'Delete',
+              promo_path(promo),
+              :method => :delete,
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-xs btn-danger' %>
+          <% end %>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+  get 'promos/dashboard' => 'promos#dashboard'
+  get 'promos/user_promos' => 'promos#user_promos'
   get 'promos/list' => 'promos#list'
 
   resources :promos

@@ -17,4 +17,5 @@ class Promo < ActiveRecord::Base
                     validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
                     validates :description, :length => {minimum: 100}
                     validates_presence_of :discount, :category, :contact, :shop
+     belongs_to :user
 end

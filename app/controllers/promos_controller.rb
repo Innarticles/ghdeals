@@ -18,10 +18,15 @@ class PromosController < ApplicationController
   def show
   end
 
+  def dashboard
+
+  end
+  def user_promos
+    @promos = current_user.promos
+  end
   # GET /promos/new
   def new
     @promo = Promo.new
-    @example = [["A", 1, {:class=>"bold"}], ["B", 2], ["C", 3]] 
   end
 
   # GET /promos/1/edit
@@ -31,7 +36,7 @@ class PromosController < ApplicationController
   # POST /promos
   # POST /promos.json
   def create
-    @promo = Promo.new(promo_params)
+    @promo = current_user.promos.create(promo_params)
 
     respond_to do |format|
       if @promo.save
@@ -76,6 +81,6 @@ class PromosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def promo_params
-      params.require(:promo).permit(:description, :product, :shop, :location, :contact, :picture, :discount, :normal_price, :category, :image)
+      params.require(:promo).permit(:description, :product, :shop, :location, :contact, :picture, :discount, :normal_price, :category, :image, :user_id)
     end
 end

@@ -29,15 +29,20 @@
                 <li>    
                       <% if user_signed_in? %>
                           <%= link_to logout_path, method: :delete do %>
-                          <span class="sign-out-ico"> Sign Out</span>
+                          <span class="sign-out-ico"> Logout</span>
                           <% end %>
-                          <%#= link_to('Logout', destroy_user_session_path, :method => :delete)%>
-
                       <% else %>
                           <%= link_to login_path do %>
-                            <span class="sign-in-ico"> Sign In</span>
+                            <span class="sign-in-ico"> Login</span>
                           <% end %>
                     <% end %>
+                </li>
+                <li>
+                  <% if user_signed_in? %>
+                          <%= link_to promos_dashboard_path do %>
+                          <span class="dashboard-ico"> Dashboard Home</span>
+                          <% end %>
+                  <% end %>
                 </li>
               </ul>
             </div><!-- /gn-scroller -->
