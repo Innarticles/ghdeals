@@ -35,7 +35,7 @@ class PromosController < ApplicationController
 
     respond_to do |format|
       if @promo.save
-        format.html { redirect_to @promo, notice: 'Promo was successfully created.' }
+        format.html { redirect_to action: 'index', notice: 'Promo was successfully created.' }
         format.json { render :show, status: :created, location: @promo }
       else
         format.html { render :new }
@@ -49,7 +49,7 @@ class PromosController < ApplicationController
   def update
     respond_to do |format|
       if @promo.update(promo_params)
-        format.html { redirect_to @promo, notice: 'Promo was successfully updated.' }
+        format.html { redirect_to action: 'index', notice: 'Promo was successfully updated.' }
         format.json { render :show, status: :ok, location: @promo }
       else
         format.html { render :edit }
