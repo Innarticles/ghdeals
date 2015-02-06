@@ -30,3 +30,17 @@
 .search {
     margin: -15px;
 }
+
+.sign-in-ico:before {
+  content: "\f090";
+  font-family: fontawesome;
+   margin-right: 20px;
+  margin-left: 19.5px;
+}
+
+.sign-out-ico:before {
+  content: "\f08b";
+  font-family: fontawesome;
+  margin-right: 20px;
+  margin-left: 19.5px;
+}
