@@ -13,6 +13,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
 gem 'rails_layout',   group: :development
+gem 'pry',           group: :development
+gem 'pry-byebug',    group: :development
 gem "paperclip", "~> 4.2"
 gem 'devise'
 gem 'bootstrap-sass'

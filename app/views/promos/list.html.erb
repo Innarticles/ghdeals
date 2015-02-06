@@ -1,6 +1,9 @@
 <div class="container">
 
   <div class="row">
+    <% if @promos.empty? %>
+   <div class="col-sm-8 col-sm-offset-2"><h2>OOOPS! there are no discounts. Please try another search.</h2></div>
+    <% else %>
     <% @promos.each do |promo| %>
     <div class="col-md-4">
       <div class="card">
@@ -52,27 +55,6 @@
   <% end %>
 
   <br>
+  <% end %>
 </div>
-
-<!-- <div class="modal fade" id="mapmodals">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Peggy Guggenheim Collection - Venice</h4>
-        </div>
-        <div class="modal-body">
-          <div id="map-container"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="close" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-
-
-
-<%= link_to 'New Promo', new_promo_path %>
 </div>
