@@ -20,11 +20,8 @@
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
 
-          <% if (promo.image == "") %>
-          <%= image_tag("box.jpg", class: "activator")%>
-          <% else %>
-          <%= image_tag promo.image(:thumb) %>
-          <% end %>
+          <%= image_tag promo.image , class: "activator"%>
+         
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
