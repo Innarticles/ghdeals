@@ -1,7 +1,12 @@
     <!-- Section: intro -->
     <section id="intro" class="intro">
       <div class="slogan">
-        <h1><strong>Welcome to Easy Discount %</strong></h1>
+        <div class="header-bg">
+        </div>
+        <h1><strong>Easy Discounts</strong></h1>
+        <div class="slogan-bg">
+        </div>
+        <p><h3><strong>Search for Promotions around you.</strong></h3></p>
         <!-- Implementation of search Bar -->
 
  <div class="container">
@@ -24,8 +29,9 @@
                 <%= text_field_tag :location, params[:location], class: "form-control", placeholder: "Enter a location", id: 'loc-search' %>
               </div>
             </div>
+
               <div class="col-md-2 search">
-                <span class="input-group-btn">
+                <span class="">
                 <%= submit_tag 'GO!', class: "btn btn-default", id: 'submit-btn' %>
                 </span>
               </div>
@@ -47,7 +53,7 @@
 </div> -->
 
 <div align="center">
-<p><strong>Search for Promotions around you.</strong></p>
+
 <a href="#about" class="btn btn-skin scroll">Learn more</a>
 </div>
 
