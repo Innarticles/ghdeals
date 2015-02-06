@@ -42,4 +42,5 @@ gem "paperclip", "~> 4.2"
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
+gem 'cancancan', '~> 1.10'
 
