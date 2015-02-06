@@ -1,24 +1,29 @@
     <!-- Section: intro -->
     <section id="intro" class="intro">
       <div class="slogan">
-        <h1>Welcome to HotDeal</h1>
+        <h1><strong>Welcome to Easy Discount %</strong></h1>
         <!-- Implementation of search Bar -->
 
  <div class="container">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1 well myWell" style="border-radius:5px;">
+    <!-- <div class="col-md-10 col-md-offset-1 well myWell" style="border-radius:5px;"> -->
       <div class="well myWell" style="border-radius:5px;">
+      </div>
         <div class="row">
           <div id="searchForm" class="col-md-12">
             <%= form_tag promos_list_path, method: :get do %>
+
               <div class="col-md-5 search">
                 <div class="form-group" id="product_search">
                   <%= text_field_tag :product, params[:product], class: "form-control", placeholder: "Search a product", id: 'prod-search' %>
                 </div>
               </div>
+
               <div class="col-md-5 search">
+                <div class="form-group" id="product_search">
                 <%= text_field_tag :location, params[:location], class: "form-control", placeholder: "Enter a location", id: 'loc-search' %>
               </div>
+            </div>
               <div class="col-md-2 search">
                 <span class="input-group-btn">
                 <%= submit_tag 'GO!', class: "btn btn-default", id: 'submit-btn' %>
@@ -26,10 +31,10 @@
               </div>
             <% end %>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
-  </div>  
+  </div>
 </div>
 
 <!-- <div>
@@ -41,11 +46,11 @@
   </form>
 </div> -->
 
-
-<p>Search for Promotions around you.</p>
-
+<div align="center">
+<p><strong>Search for Promotions around you.</strong></p>
 <a href="#about" class="btn btn-skin scroll">Learn more</a>
 </div>
+
 </section>
 <!-- /Section: intro -->
 
@@ -59,7 +64,7 @@
         <div class="card-image waves-effect waves-block waves-light">
 
           <%= image_tag promo.image , class: "activator"%>
-         
+
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
@@ -73,7 +78,7 @@
            <br>
            <%= promo.normal_price %>
          </div>
-         
+
 
        </div>
        <div class="card-reveal">
