@@ -6,6 +6,8 @@
  * Made By MaterializeCSS.com
  */
 
+
+
 @font-face {
 
 font-family: 'Lato';
@@ -66,11 +68,16 @@ margin-top: -15px;
 float: right;
 line-height: 2;
 }
-
+.form_bg{
+	/*background-color: ;*/
+}
+.side_form{
+	background-color: #e0e0e0;
+}
 
 
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+/*@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');*/
 
 
 body {
@@ -964,6 +971,7 @@ footer a:hover {
 	}
 
 }
+
 
 
 
