@@ -533,7 +533,7 @@ input.gn-search:focus {
 }
 
 #intro{
-	background-image: url(/assets/bg.png);
+	background-image: url(image-path('bg.png'));
 	background-size: cover;
 }
 
@@ -927,6 +927,12 @@ footer a:hover {
     margin-top: 0;
 }
 
+.top1 {
+  margin-top: 40px;
+}
+.top {
+  margin-top: 90px;
+}
 
 /* Media queries */
 
