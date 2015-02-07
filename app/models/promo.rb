@@ -7,8 +7,8 @@ class Promo < ActiveRecord::Base
                     :path => ":rails_root/public/images/:id/:style/:filename",
                     :url  => "/images/:id/:style/:filename",
                     :styles   => {
-                    	:thumb    => ['60x60#',  :jpg, :quality => 70],
-                    	:preview  => ['200x200#',  :jpg, :quality => 70],
+                    	:thumb    => ['200x200#',  :jpg, :quality => 70],
+                    	:preview  => ['300x300#',  :jpg, :quality => 70],
                     	:large    => ['600>',      :jpg, :quality => 70],
                     	:retina   => ['1200>',     :jpg, :quality => 30]
                     }

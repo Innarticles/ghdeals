@@ -1,38 +1,41 @@
 
-<%= bootstrap_form_for(@promo, layout: :horizontal, label_col: "col-sm-3", control_col: "col-sm-7") do |f| %>
-<% if @promo.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(@promo.errors.count, "error") %> prohibited this promo from being saved:</h2>
 
-  <ul>
-    <% @promo.errors.full_messages.each do |message| %>
-    <li><%= message %></li>
-    <% end %>
-  </ul>
+<div class="container">
+  <div class="row">
+          <%= bootstrap_form_for(@promo, layout: :horizontal, label_col: "col-sm-3 col-sm-offset-1", control_col: "col-sm-4") do |f| %>
+          <% if @promo.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@promo.errors.count, "error") %> prohibited this promo from being saved:</h2>
+
+            <ul>
+              <% @promo.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+          <% end %>
+          <%= f.text_field :shop %>
+          <%= f.text_field :product %>
+          <%= f.select :category, options_for_select(Promo::CATEGORIES, Promo::CATEGORIES ) %>
+          <%= f.file_field :image %>
+          <%= f.text_area :description %>
+          <%= f.text_field :discount %>
+
+          <%= f.number_field :normal_price %>
+          <%= f.text_field :location %>
+          <%= f.text_field :contact %>
+
+          <div class="text-center form-btns">
+            <%= f.submit :class => "btn btn-primary"%>
+            <%= link_to 'Back', promos_path, :class => "btn btn-default btn-sm" %>
+          </div>
+          <% end %>
+         
+  </div>
+  <div class="wrapper">
+     <div class="span-4">
+            <%= render 'side_info' %>
+          </div>
+  </div>
+    
 </div>
-<% end %>
-<%= f.text_field :shop %>
-<%= f.text_field :product %>
-<%= f.select :category, options_for_select(Promo::CATEGORIES, Promo::CATEGORIES ) %>
-<%= f.file_field :image %>
-<%= f.text_area :description %>
-<%= f.text_field :discount %>
-
-<%= f.number_field :normal_price %>
-<%= f.text_field :location %>
-
-
-
-<%= f.text_field :contact %>
-
-
-
-
-<div align="center">
-  <%= f.submit :class => "btn btn-primary"%>
-  <%= link_to 'Back', promos_path, :class => "btn btn-default" %>
-</div>
-<% end %>
-</div>
-
-

@@ -4,13 +4,16 @@
     <% if @promos.empty? %>
    <div class="col-sm-8 col-sm-offset-2"><h2>OOOPS! there are no discounts. Please try another search.</h2></div>
     <% else %>
-    <% @promos.each do |promo| %>
+    <% @promos.reverse.each do |promo| %>
     <div class="col-md-4">
       <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
+        <!-- <div class="card-image waves-effect waves-block waves-light">
 
-          <%= image_tag("box.jpg", class: "activator")%>
+          <%#= image_tag promo.image, class: "activator"%>
 
+        </div> -->
+        <div class="">
+          <%= image_tag promo.image(:preview) %>
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
@@ -20,7 +23,7 @@
           <%= promo.location %>
           <br>
           <div align="right">
-           <span> <%= promo.discount %> %</span>
+           <div id="discount-rate"><span><%= promo.discount %> %&nbsp;</span>Off</div>
            <br>
            <%= promo.normal_price %>
          </div>

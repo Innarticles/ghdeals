@@ -10,8 +10,15 @@ class PromosController < ApplicationController
   end
 
   def list
-    @promos = Promo.where("product LIKE ? AND location LIKE ?", "%#{params[:product]}%", "%#{params[:location]}%") 
+
+    if params[:location] == ""
+      location = "accra"
+    @promos = Promo.where("product LIKE ? AND location LIKE ?", "%#{params[:product]}%", "%#{location}") 
     render 'list'
+    else
+       @promos = Promo.where("product LIKE ? AND location LIKE ?", "%#{params[:product]}%", "%#{params[:location]}%")
+       render 'list'
+    end
   end
   # GET /promos/1
   # GET /promos/1.json

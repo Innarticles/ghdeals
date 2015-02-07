@@ -63,15 +63,19 @@
 
 <div class="container">
   <div class="row">
-    <% @promos.each do |promo| %>
+    <% @promos.reverse[0..2].each do |promo| %>
 
     <div class="col-md-4">
       <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
+        <!-- <div class=" card-image waves-effect waves-block waves-light">
 
-          <%= image_tag promo.image , class: "activator"%>
+          <%#= image_tag promo.image, class: "activator" %>
 
+        </div> -->
+         <div class="">
+          <%= image_tag promo.image(:preview) %>
         </div>
+
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4"><%= promo.product %><i class="fa fa-ellipsis-v repairI"></i></span>
           <br>
@@ -80,7 +84,7 @@
           <%= promo.location %>
           <br>
           <div align="right">
-           <span> <%= promo.discount %> %</span>
+           <div id="discount-rate"><span><%= promo.discount %> %&nbsp;</span>Off</div>
            <br>
            <%= promo.normal_price %>
          </div>
@@ -91,7 +95,7 @@
         <span class="card-title grey-text text-darken-4"><%= promo.product %> <i class="fa fa-times repairI"></i></span>
         <br>
         <p><%= promo.description %></p>
-        <h5>Contact</h5>
+        <h4>Contact</h4>
         <%= promo.contact %>
         <br>
         <br>
@@ -127,7 +131,7 @@
 
           <div class="section-heading">
           <h2>About us</h2>
-          <p>Stop the hustle of going from shop to shop doing window shopping, asking for prices to items that you need. Do this with EasyDiscount. We bring you the best pricing deals out there!!.</p>
+          <p>Stop the hustle of going from shop to shop doing window shopping, asking for prices to items that you need. Do this with EasyDiscount. We bring you the best price deals out there!!.</p>
           </div>
 
         </div>
