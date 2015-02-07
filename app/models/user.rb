@@ -9,4 +9,8 @@ class User < ActiveRecord::Base
   def check_promo?
     self.promos.length > 0
   end
+  
+  def admin?
+    self.role == 'admin'
+  end
 end

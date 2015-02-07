@@ -26,3 +26,5 @@ group :production do
   gem 'unicorn'
   gem 'rails_12factor', '0.0.3'
 end
+
+gem 'cancancan', '~> 1.10'
